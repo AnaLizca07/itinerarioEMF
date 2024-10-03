@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/ItinerarioModel/src" modelPluginID="ItinerarioModel"
+    modelName="Itinerario" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="22.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>../Itinerario.ecore</foreignModel>
+  <genPackages prefix="ItinerarioModel" disposableProviderFactory="true" ecorePackage="Itinerario.ecore#/">
+    <genClasses ecoreClass="Itinerario.ecore#//Itinerario">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Itinerario.ecore#//Itinerario/nombre"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Itinerario.ecore#//Itinerario/vuelos"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Itinerario.ecore#//Itinerario/pasajeros"/>
+    </genClasses>
+    <genClasses ecoreClass="Itinerario.ecore#//Pasajero">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Itinerario.ecore#//Pasajero/nombre"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Itinerario.ecore#//Pasajero/identificacion"/>
+    </genClasses>
+    <genClasses ecoreClass="Itinerario.ecore#//Vuelo">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Itinerario.ecore#//Vuelo/nombre"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Itinerario.ecore#//Vuelo/origen"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Itinerario.ecore#//Vuelo/destino"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Itinerario.ecore#//Vuelo/salida"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Itinerario.ecore#//Vuelo/llegada"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

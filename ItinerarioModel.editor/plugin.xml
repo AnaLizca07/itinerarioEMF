@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated Itinerario -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="itinerarioModel.presentation.ItinerarioModelModelWizardID"
+            name="%_UI_ItinerarioModelModelWizard_label"
+            class="itinerarioModel.presentation.ItinerarioModelModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/ItinerarioModelModelFile.gif">
+         <description>%_UI_ItinerarioModelModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated Itinerario -->
+      <editor
+            id="itinerarioModel.presentation.ItinerarioModelEditorID"
+            name="%_UI_ItinerarioModelEditor_label"
+            icon="icons/full/obj16/ItinerarioModelModelFile.gif"
+            extensions="itinerariomodel"
+            class="itinerarioModel.presentation.ItinerarioModelEditor"
+            contributorClass="itinerarioModel.presentation.ItinerarioModelActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

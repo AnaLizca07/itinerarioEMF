@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="receta" nsURI="http://humboldt/receta" nsPrefix="humboldt.receta">
+  <eClassifiers xsi:type="ecore:EClass" name="Receta">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nombre" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ingredientes" lowerBound="1"
+        upperBound="-1" eType="#//Ingrediente"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="instrucciones" lowerBound="1"
+        upperBound="-1" eType="#//Instruccion"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ingrediente">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nombre" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Instruccion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="texto" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>
